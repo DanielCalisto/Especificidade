@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Especificidade</title>
+</head>
+<header>
+    <img src="img/icons8-css-48.png" alt="">
+    <h1>Especificidade CSS</h1>
+</header>
+
+<body>
+    <nav class="menu-lateral">
+
+          <ul class="menu-itens">
+                <li class="lista-estilo-hover">
+                    <a href="#especificidade">Especificidade</a>
+                </li>
+                <li>
+                    <a href="#seletores">Seletores</a>
+                </li>
+                <li>
+                    <a href="#calculo">Calcúlo</a>
+                </li>
+                <li>
+                    <a href="#importante">!Important</a>
+                </li>
+            </ul>
+
+        </nav>
+  
+    <section class="sec-especificidade">
+        <div class="titulo-identificador">
+            <h2 id="especificidade">Especificidade</h2>
+            <p>Especificidade CSS é um tipo de “poder de escolha”, que ajuda os navegadores a decidir qual valor da propriedade CSS terá precedência e será aplicado aos elementos. Geralmente, a especificidade é o culpado por você bater cabeça quando pensa que o valor das propriedades CSS deve se aplicar a um elemento, mas não. </p>
+        </div>
+
+    </section>
+
+    <section class="sec-especificidade">
+        <div class="titulo-identificador">
+            <h2 id="seletores">Seletores</h2>
+            <p><span>Universal</span>
+                Seletor universal é representado por um asterisco, “*”, e casa com todos os elementos do documento.</p>
+
+            <p>
+                <span>Seletor por ID  </span>    
+                Este seletor é utilizado quando desejamos identificar um elemento específico no nosso documento HTML para sua estilização no CSS usando “#”.
+</p>
+
+            <p>
+                <span>Seletor por Classe </span>    
+                Um elemento HTML pode ter um ou mais itens definidos em seu atributo de class . O seletor de classe corresponde a qualquer elemento que tenha essa classe aplicada a ele.</p>
+
+            <p><span>Seletor por Elemento </span>   
+                Este seletor identifica todas as tags  do documento HTML e estiliza no CSS, por exemplo você pode estilizar todas as divs de uma vez só.</p>
+
+            <p><span>Seletor por Pseudo-Classe </span>   
+                Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele.</p>
+
+            <p><span>Seletor por Pseudo-Elemento </span>
+                Um pseudo-elemento CSS é uma palavra-chave adicionada a um seletor que permite que você estilize uma parte específica do elemento selecionado. Por exemplo, o pseudo-elemento ::first-line aplica o estilo apenas na primeira linha de um parágrafo.</p>
+        </div>
+    </section>
+
+    <section class="sec-especificidade">
+        <div class="titulo-identificador"> 
+            <h2 id="calculo">Calcúlo</h2>
+            <p><span>Como calcular a especificidade? </span>
+                O cálculo de especificidade é uma combinação desses três tipos de seletores, que gera algo mais ou menos assim:
+                
+                (0, 0, 0)
+                Separadamente, esses números representam a quantidade de ids, classes e elementos usados na formação de um seletor CSS. O digito a esquerda terá maior prioridade que o da direita, ou seja, a primeira posição é a de maior peso, enquanto a terceira posição é a de menos peso. Então será feita uma comparação, de número a número, para decidir qual seletor possui maior especificidade (ou peso/prioridade).</p>
+
+        </div>
+    </section>
+    <section class="sec-especificidade">
+        <div class="titulo-identificador">
+            <h2 id="importante">!Important</h2>
+            <p><span>Uma exceção !important </span>
+                Quando a regra !importanté utilizada na declaração do estilo, substitua qualquer outra declaração feita no CSS, onde quer que esteja na lista de declaração. Contudo, !importantnão tem nada a ver com especificação.</p>
+
+        </div>
+    </section>
+
+</body>
+<footer>
+    <div>
+         <p>Create By: Daniel Calisto & Anderson Silva</p>
+    </div>
+   
+</footer>
+</html>
